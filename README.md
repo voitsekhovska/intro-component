@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://voitsekhovska.github.io/intro-component/)
+- Live Site URL: [https://voitsekhovska.github.io/intro-component](https://voitsekhovska.github.io/intro-component/)
 
 ### Built with
 
