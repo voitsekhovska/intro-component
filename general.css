@@ -1,0 +1,146 @@
+/* GENERAL STYLES */
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --white: #fff;
+
+  --general-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  background-image: url(./images/bg-intro-desktop.png);
+  background-color: var(--red);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.general-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wrapper {
+  flex-direction: row;
+  flex: 1;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.right-block {
+  gap: 30px;
+  align-items: flex-start;
+}
+.right-block p {
+  width: 90%;
+}
+
+.banner {
+  background-color: var(--blue);
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: var(--general-shadow);
+  font-weight: 400;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  box-shadow: var(--general-shadow);
+}
+.form input {
+  font-family: Poppins, sans-serif;
+  padding: 15px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--grayish-blue);
+  font-size: 16px;
+}
+.form input:focus {
+  border: 2px solid var(--blue);
+  outline: none;
+}
+.form input::placeholder {
+  color: var(--grayish-blue);
+}
+.form p {
+  font-size: 12px;
+  color: var(--grayish-blue);
+  text-align: center;
+  padding-top: 15px;
+}
+
+.button {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: var(--general-shadow);
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.links {
+  text-decoration: none;
+  color: var(--red);
+  font-weight: 600;
+}
+.links:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
