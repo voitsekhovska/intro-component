@@ -17,9 +17,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 100%;
-}
 body {
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -31,7 +28,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 50px 30px;
 }
 
 h1 {
@@ -63,6 +60,8 @@ h1 {
 .right-block p {
   width: 90%;
 }
+
+/* FORM STYLES */
 
 .banner {
   background-color: var(--blue);
@@ -137,10 +136,60 @@ h1 {
   text-decoration: underline;
 }
 
+/* FOOTER */
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* QUERIES */
+
+@media (max-width: 1000px) {
+  body,
+  .button,
+  .form input {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 855px) {
+  body {
+    background-image: url(./images/bg-intro-mobile.png);
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .right-block {
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .banner {
+    padding: 20px 40px;
+    margin: 20px 0;
+  }
+  .form {
+    padding: 25px;
+  }
+  .form input {
+    padding: 15px;
+    margin-bottom: 15px;
+    font-weight: 500;
+  }
+
+  .attribution {
+    padding-top: 40px;
+  }
 }
