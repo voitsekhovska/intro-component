@@ -101,7 +101,7 @@ h1 {
 .form input::placeholder {
   color: var(--grayish-blue);
 }
-.form p {
+.form .terms {
   font-size: 12px;
   color: var(--grayish-blue);
   text-align: center;
@@ -144,6 +144,24 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* STYLES FOR ERRORS */
+
+.form .error-general {
+  border: 2px solid var(--red);
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+.form .error-message {
+  color: var(--red);
+  font-size: 12px;
+  text-align: right;
+  font-style: italic;
+  margin-top: -15px;
+  margin-bottom: 15px;
 }
 
 /* QUERIES */
