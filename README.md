@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-validation](https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-validation-TPc4C2l70j)
 - Live Site URL: [https://voitsekhovska.github.io/intro-component](https://voitsekhovska.github.io/intro-component/)
 
 ### Built with

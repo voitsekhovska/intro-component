@@ -3,6 +3,17 @@
 const formValidation = document.querySelector(".form");
 const allInputs = document.querySelectorAll(".form input");
 
+const createErrorMessage = (input) => {
+  let errorElement = input.nextElementSibling;
+
+  if (!errorElement || !errorElement.classList.contains("error-message")) {
+    errorElement = document.createElement("p");
+    errorElement.classList.add("error-message");
+    input.parentNode.insertBefore(errorElement, input.nextSibling);
+  }
+  return errorElement;
+}
+
 const validationCheck = (e) => {
   e.preventDefault();
 
@@ -11,7 +22,7 @@ const validationCheck = (e) => {
 
   fields.forEach((fieldName) => {
     const inputData = document.querySelector(`input[name="${fieldName}"]`);
-    const errorMessage = inputData.nextElementSibling;
+    const errorMessage = createErrorMessage(inputData);
 
     inputData.classList.remove("error-general");
     errorMessage.textContent = " ";
@@ -56,7 +67,9 @@ function isValidEmail(email) {
 allInputs.forEach((input) => {
   input.addEventListener("input", () => {
     input.classList.remove("error-general");
-    input.nextElementSibling.textContent = "";
+
+    const errorMessage = createErrorMessage(input);
+    errorMessage.textContent = " ";
   });
 });
 
